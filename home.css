@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background-attachment: fixed;
+    padding-top: 50px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button, .btn-link {
+    padding: 14px 20px;
+    font-size: 16px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover, .btn-link:hover {
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+    transform: scale(1.05);
+}
+
+.btn-link {
+    text-decoration: none;
+    color: white;
+}
+
+button:focus, .btn-link:focus {
+    outline: none;
+}
+
+.login-register-btns {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.add-vinyl-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 8px;
+    padding: 30px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+ul li:hover {
+    transform: scale(1.05);
+}
+
+ul li div {
+    margin-bottom: 8px;
+}
+
+ul li img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+form {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+form input[type="submit"] {
+    padding: 6px 10px;
+    font-size: 12px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+form input[type="submit"]:hover {
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+    transform: scale(1.05);
+}
+
+form input[type="hidden"] {
+    display: none;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border-left: 4px solid #00c6ff;
+}
+
+a {
+    color: #00c6ff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.register-link a {
+    color: #00c6ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.no-vinyl-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    font-weight: normal;
+    padding: 10px;
+    background: none;
+    box-shadow: none;
+}
+
+.logo-img {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.small-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.small-btn:hover {
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+    transform: scale(1.05);
+}
+
+ul li .btn-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.filters-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 600px;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filters-container select,
+.filters-container input[type="submit"] {
+    width: 120px;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+}
+
+.filters-container select {
+    max-width: 100%;
+}
+
+.filters-container input[type="submit"] {
+    font-size: 14px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filters-container select:focus,
+.filters-container input[type="submit"]:focus {
+    outline: none;
+    border-left: 4px solid #00c6ff;
+}
+
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: none;
+    border: none;
+    background: none;
+}
+
+.question-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+}
+
+.question-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: none;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.question-container input[type="text"]:focus,
+.question-container input[type="submit"]:focus {
+    outline: none;
+    border-left: 4px solid #00c6ff;
+}
+
+
+
+
+
+
